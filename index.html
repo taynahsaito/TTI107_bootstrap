@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+    crossorigin="anonymous">
+</head>
+<body>
+    <div class="container border py-5 mt-2">
+        
+        <!-- tópico 2.13 -->
+        <div class="row">
+            <!-- d-flex: display: flex
+            padrao row da esquerda para direita -->
+            <div class="d-flex bg-light border my-2">
+                <div class="p-4 border mx-2">a</div>
+                <div class="p-4 border mx-2">b</div>
+                <div class="p-4 border mx-2">c</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- flex-column: de cima para baixo
+            o eixo principal se torna o vertical -->
+            <div class="d-flex flex-column bg-light border my-2">
+                <div class="p-4 border mx-2">a</div>
+                <div class="p-4 border mx-2">b</div>
+                <div class="p-4 border mx-2">c</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- flex-column-reverse: de baixo para cima -->
+            <div class="d-flex flex-column-reverse bg-light border my-2">
+                <div class="p-4 border mx-2">a</div>
+                <div class="p-4 border mx-2">b</div>
+                <div class="p-4 border mx-2">c</div>
+            </div>
+        </div>
+
+        <!-- tópico 2.12 -->
+        <div class="row justify-content-start my-2">
+            <div class="col-4 border">start</div>
+            <div class="col-4 border">start</div>
+        </div>
+
+        <div class="row justify-content-center my-2">
+            <div class="col-4 border">center</div>
+            <div class="col-4 border">center</div>
+        </div>
+
+        <div class="row justify-content-end my-2">
+            <div class="col-4 border">end</div>
+            <div class="col-4 border">end</div>
+        </div>
+
+        <!-- deslocamento de colunas em uma linha com offset,
+        Especificamos a medida a partir da qual o deslocamento deve ocorrer e o número de colunas de deslocamento -->
+        <div class="row">
+        <!-- .col-md-6.offset-md-3.border-my-2{col: 6, off: 3} -->
+            <div class="col-md-6 border offset-md-3 border-my-2">col: 6, off: 3</div>
+        </div>
+
+        <div class="row">
+        <!-- tópico 2.7 -> especificar o tamanho que desejamos que os elementos deixem de ser empilhados, no caso, md
+        a largura nesse caso, é igual -->
+            <border class="col-md border mt-2">a</border>
+            <border class="col-md border mt-2">b</border>
+            <border class="col-md border mt-2">c</border>
+        </div>
+
+    <!-- se não mencionar o col, empilha automaticamente -->
+        <div class="row">
+            <border class="border mt-2">a</border>
+            <border class="border mt-2">b</border>
+            <border class="border mt-2">c</border>
+        </div>
+
+    <!-- tópico 2.6 -> leiaute automatico -->
+        <div class="row">
+            <div class="col border mt-2">auto</div>
+            <div class="col-5 border mt-2">5</div>
+            <div class="col-4 border mt-2">4</div>
+        </div>
+
+    <!-- tópico 2.5 -> caixas de largura igual, sem empilhar -->
+        <div class="row">
+            <!-- .col.border.mt-2*3  -->
+            <div class="col border mt-2">a</div>
+            <div class="col border mt-2">b</div>
+            <div class="col border mt-2">c</div>
+        </div>
+
+       <div class="row">
+        <div class="cow-sm-12 col-md-5 col-lg-12 border">a</div>
+        <div class="cow-sm-12 cold-md-7 col-lg-2 border">b</div>
+        <div class="cow-sm-12 col-md-2 col-lg-11 border">c</div>
+        <div class="cow-sm-12 col-md-10 col-lg-1 border">d</div>
+       </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>

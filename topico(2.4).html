@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+    crossorigin="anonymous">
+</head>
+<body>
+    <div class="container border py-5 mt-2">
+
+        <div class="row">
+        <!-- O Bootstrap usa um modelo baseado em 12 colunas. Ao colocar um elemento em um container,
+         podemos decidir quantas colunas desejamos que ele ocupe -->
+        <!-- Elementos filhos de um elemento que tenha a classe row aplicada “disputam” espaço horizontalmente -->
+    
+        <!-- uma linha com um unico elemento ocupando as 12 colunas -->
+            <div class="col-12 border">
+            12 colunas
+            </div>
+        </div>
+    <!-- col = distribuição de colunas dentro da linha -->
+    
+    <!-- uma linha com um unico elemento ocupando 2 colunas -->
+        <div class="row">
+        <div class="col-2 mt-2 border">
+            2 colunas
+        </div>
+        <div class="col-3 mt-2 border">
+            3 colunas
+        </div>
+        </div>
+    
+        <div class="row">
+        <!-- 3 elementos div disputando espaço na mesma row -->
+            <div class="col-7 mt-2 border">7</div>
+            <div class="col-4 mt-2 border">4</div>
+        <!-- div.col-2.mt-2.border{2} -->
+            <div class="col-2 mt-2 border">2</div>
+        </div>
+    
+        <div class="row">
+        <!-- se a tela for pequena(sm), cada um requer 12 colunas, causando empilhamento
+        se a tela for pelo menos media(md), cada um requer apenas 6 colunas, ficando uma do lado da outra -->
+        <!-- div.col-sm-12.col-md-6.border{sm-12 md-6} -->
+        <!-- o padrão do bootstrap de colunas é 12: metodologia mobile first, porque provavelmente o usuario estará usando celular -->
+            <div class="col-sm-12 col-md-6 border bg-primary">sm-12 md-6</div>
+            <div class="col-sm-12 col-md-6 border bg-secondary">sm-12 md-6</div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>
